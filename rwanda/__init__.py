@@ -1,4 +1,4 @@
-from .main import Provinces
+from rwanda.locations import Provinces
 
 app = Provinces()
 

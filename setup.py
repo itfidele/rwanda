@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="rwanda", # Replace with your own username
-    version="0.0.1",
+    version="0.0.7",
     author="Fidele Kirezi Cyisa",
     author_email="itfidele@gmail.com",
     description="Python Package to extract everything you can need in rwanda",
