@@ -30,8 +30,9 @@ class Rwanda:
     def all_sectors(self):
         se=[]
         d=self.datas['provinces']
-        for sectors in d['districts']:
-            for sector in sectors['sectors']:
-                se.append(sector['name'])
+        for p in d:
+            for district in p['districts']:
+                for sector in district['sectors']:
+                    se.append(sector['name'])
         
         return se
