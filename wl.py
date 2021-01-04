@@ -1,3 +1,3 @@
-from rwanda.locations import Provinces
-a=Provinces()
-print(a.provinces())
+from rwanda.locations import Rwanda
+rwanda=Rwanda()
+print(len(rwanda.all_districts()))
