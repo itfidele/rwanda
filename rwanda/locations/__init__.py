@@ -8,31 +8,43 @@ class Rwanda:
         with open(my_file,'r') as fp:
             data=json.load(fp)
         self.datas=data
+        self.provinces=[]
+        self.districts=[]
+        self.sectors=[]
+        self.cells=[]
+        self.villages=[]
+
+        for p in self.datas['provinces']:
+            self.provinces.append(p['name'])
+            for district in p['districts']:
+                self.districts.append(district['name'])
+                for sector in district['sectors']:
+                    self.sectors.append(sector['name'])
+                    for cell in sector['cells']:
+                        self.cells.append(cell['name'])
+                        for vilages in cell['villages']:
+                            self.villages.append(vilages['name'])
+
         if province_name is not None:
             self.province_name == province_name
     
     def all_provinces(self):
-        pro=[]
-        d=self.datas['provinces']
-        for province in d:
-            pro.append(province['name'])
-            
-        return pro
+        return self.provinces
 
     def all_districts(self):
-        di=[]
-        d=self.datas['provinces']
-        for districts in d:
-            for district in districts['districts']:
-                di.append(district['name'])
-        return di
+        return self.districts
 
     def all_sectors(self):
-        se=[]
-        d=self.datas['provinces']
-        for p in d:
-            for district in p['districts']:
-                for sector in district['sectors']:
-                    se.append(sector['name'])
+        return self.sectors
+
+    def all_cells(self):
+        return self.cells
+
+    def all_villages(self):
+        return self.villages
+
+
+
+
+
         
-        return se
