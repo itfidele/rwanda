@@ -12,6 +12,15 @@ class Rwanda:
         self.datas = data
         self.provinces_names = [province['name']
                                 for province in self.datas['provinces']]
+        
 
     def provinces(self):
         return self.provinces_names
+    
+    def districts(self,province_name):
+        """Returns all districts from a province
+
+        Args:
+            province_name ([string]): [province name]
+        """
+        pass
