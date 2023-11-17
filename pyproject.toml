@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rwanda"
-version = "0.2.1"
+version = "0.2.2"
 description = "Python Package to extract everything you can need in rwanda and use"
 authors = ["Fidele K <itfidele@gmail.com>"]
 license = "MIT"
