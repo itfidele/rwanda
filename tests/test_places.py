@@ -10,4 +10,7 @@ def validator():
 
 
 def test_provinces(validator):
+    """
+    Test if provinces returns a list of provinces
+    """
     assert len(validator.provinces()) == 5
