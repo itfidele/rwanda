@@ -1,5 +1,6 @@
 {
-  "provinces": [{
+  "provinces": [
+    {
     "name": "Umujyi wa Kigali",
     "districts": [{
       "name": "Nyarugenge",
