@@ -1,7 +1,9 @@
 import json
 import os
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-my_file = os.path.join(f'{THIS_FOLDER}/locations', 'locations.json')
+my_file = os.path.join(f'{THIS_FOLDER}/store', 'locations.json')
+
+
 
 
 class Places:
