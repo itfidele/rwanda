@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rwanda"
+version = "0.2.1"
+description = "Python Package to extract everything you can need in rwanda and use"
+authors = ["Fidele K <itfidele@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+requests-mock = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
